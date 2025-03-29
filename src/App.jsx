@@ -31,7 +31,12 @@ function App() {
 
   return (
     <>
-      
+    <div style={{ padding: "20px" }}>
+      <h2>Home</h2>
+      {posts.map((post) => (
+        <PostCard key={post.id} post={post} />
+      ))}
+    </div>
     </>
   )
 }
